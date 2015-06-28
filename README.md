@@ -1,5 +1,5 @@
 #jlVCF
-VCF file parser module for Julia language.
+Very simple VCF file parser module for Julia language.
 
 ##Sample usage:
 ```
@@ -47,7 +47,7 @@ See vcf file format specification for the detailed explanation of what each fiel
   * close(vc::VCFIterator)
   * reset(vc::VCFIterator)
 * Variant related
-  * etChrom(v::Variant)
+  * getChrom(v::Variant)
   * getPos(v::Variant)
   * getId(v::Variant)
   * getRef(v::Variant)
