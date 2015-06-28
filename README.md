@@ -32,7 +32,7 @@ See vcf file format specification for the detailed explanation of what each fiel
   * reference::ASCIIString; reference genome name
 
 ##Available functions
-*VCFIterator related
+* VCFIterator related
   * VCFIterator(filename::ASCIIString)
   * getVersion(vc::VCFIterator)
   * getFilename(vc::VCFIterator)
@@ -46,7 +46,7 @@ See vcf file format specification for the detailed explanation of what each fiel
   * eof(vc::VCFIterator)
   * close(vc::VCFIterator)
   * reset(vc::VCFIterator)
-*Variant related
+* Variant related
   * etChrom(v::Variant)
   * getPos(v::Variant)
   * getId(v::Variant)
