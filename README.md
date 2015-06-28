@@ -7,7 +7,7 @@ vc = VCFIterator("jlVCFtest/somaticsniper.vcf")
 while !eof(vc)
     #v is a variable for variant class.
     v = next(vc)
-    println(v)
+	print(v.POS, v.CHROM
 end
 ```
 
@@ -31,24 +31,34 @@ See vcf file format specification for the detailed explanation of what each fiel
   * filters::Dict{ASCIIString, ASCIIString}; dict of filters with filter names as keys and their descriptions as values 
   * reference::ASCIIString; reference genome name
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##Available functions
+*VCFIterator related
+  * VCFIterator(filename::ASCIIString)
+  * getVersion(vc::VCFIterator)
+  * getFilename(vc::VCFIterator)
+  * getSampleNames(vc::VCFIterator)
+  * getINFOProperties(vc::VCFIterator)
+  * getFORMATProperties(vc::VCFIterator)
+  * getContigs(vc::VCFIterator)
+  * getFilters(vc::VCFIterator)
+  * getReference(vc::VCFIterator)
+  * next(vc::VCFIterator)
+  * eof(vc::VCFIterator)
+  * close(vc::VCFIterator)
+  * reset(vc::VCFIterator)
+*Variant related
+  * etChrom(v::Variant)
+  * getPos(v::Variant)
+  * getId(v::Variant)
+  * getRef(v::Variant)
+  * getAlt(v::Variant)
+  * getQual(v::Variant)
+  * getFilter(v::Variant)
+  * getInfo(v::Variant)
+  * getFormat(v::Variant)
 
 Version 0.01
+
 Naozumi Hiranuma (hiranumn at cs dot washington dot edu)
+
 University of Washington Computer Science and Engineering
