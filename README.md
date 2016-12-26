@@ -57,8 +57,10 @@ See vcf file format specification for the detailed explanation of what each fiel
   * getInfo(v::Variant)
   * getFormat(v::Variant)
 
-Version 0.01
+Version 0.0.1
+
+CURRENTLY this runs on Julia 0.3.x. 
+Let me know if this needs to be updated.
 
 Naozumi Hiranuma (hiranumn at cs dot washington dot edu)
-
 University of Washington Computer Science and Engineering
