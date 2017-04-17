@@ -1,7 +1,7 @@
-#jlVCF
+# jlVCF
 Very simple VCF file parser module for Julia language.
 
-##Sample usage:
+## Sample usage:
 ```
 vc = VCFIterator("jlVCFtest/somaticsniper.vcf")
 while !eof(vc)
@@ -11,7 +11,7 @@ while !eof(vc)
 end
 ```
 
-##Classes and their fields
+## Classes and their fields
 See vcf file format specification for the detailed explanation of what each field means. 
 * Variant
   * CHROM::ASCIIString
@@ -31,7 +31,7 @@ See vcf file format specification for the detailed explanation of what each fiel
   * filters::Dict{ASCIIString, ASCIIString}; dict of filters with filter names as keys and their descriptions as values 
   * reference::ASCIIString; reference genome name
 
-##Available functions
+## Available functions
 * VCFIterator related
   * VCFIterator(filename::ASCIIString)
   * getVersion(vc::VCFIterator)
