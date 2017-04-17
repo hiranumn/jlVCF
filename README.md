@@ -7,7 +7,7 @@ vc = VCFIterator("jlVCFtest/somaticsniper.vcf")
 while !eof(vc)
     #v is a variable for variant class.
     v = next(vc)
-	print(v.POS, v.CHROM)
+    print(v.POS, v.CHROM)
 end
 ```
 
