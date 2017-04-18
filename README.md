@@ -12,7 +12,7 @@ end
 ```
 
 ## Classes and their fields
-See vcf file format specification for the detailed explanation of what each field means. 
+See vcf file format specification (https://samtools.github.io/hts-specs/VCFv4.2.pdf) for the detailed explanation of what each field means. 
 * Variant
   * CHROM::ASCIIString
   * POS::Int64
