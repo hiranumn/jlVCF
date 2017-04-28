@@ -2,7 +2,7 @@
 Very simple VCF file parser module for Julia language.
 
 ## Sample usage:
-```
+``` Julia
 vc = VCFIterator("jlVCFtest/somaticsniper.vcf")
 while !eof(vc)
     #v is a variable for variant class.
